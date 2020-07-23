@@ -18,4 +18,4 @@ A simple calendar picker component built with react using stateless component an
 Run `npm start`<br/><br/><br/>
 
 ### Live Demo
-https://rc4dayyan.github.io/form-calendar-picker
+https://rc4dayyan.github.io/form-calendar-picker-io
