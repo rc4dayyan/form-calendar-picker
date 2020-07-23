@@ -22,17 +22,17 @@ const FormSearch = () => {
             ...searchParams,
             startDate: dataDate.start ? moment(dataDate.start).format('ddd, MMM DD YYYY') : tomorrow.format('ddd, MMM DD YYYY'), 
             endDate: dataDate.end ? moment(dataDate.end).format('ddd, MMM DD YYYY') : afterTomorrow.format('ddd, MMM DD YYYY'), 
-            fd:moment(dataDate.start) ? moment(dataDate.start).format("D") : tomorrow.format("D"),
-            fm:moment(dataDate.start) ? moment(dataDate.start).format("M") : tomorrow.format("M"),
-            fy:moment(dataDate.start) ? moment(dataDate.start).format("YYYY") : tomorrow.format("YYYY"),
-            td:moment(dataDate.end) ? moment(dataDate.end).format("D") : afterTomorrow.format("D"),
-            tm:moment(dataDate.end) ? moment(dataDate.end).format("M") : afterTomorrow.format("M"),
-            ty:moment(dataDate.end) ? moment(dataDate.end).format("YYYY") : afterTomorrow.format("YYYY"),
         });
     }
 
+    const [ submitedSearchParams, setSubmitedSearchParams ] = useState(() => {
+        const localData = localStorage.getItem('submited-search-params');
+        return localData ? JSON.parse(localData) : {}
+    });
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        setSubmitedSearchParams({endDate: searchParams.endDate, startDate: searchParams.startDate});
         console.log(searchParams);
     }
     
@@ -62,9 +62,9 @@ const FormSearch = () => {
     }
 
     return (  
-        <div className="container" style={{paddingTop: '40px'}}>
+        <div className="container" style={{padding: '40px 0 20px 0'}}>
             <form onSubmit={handleSubmit}>
-                <div className="row" style={{marginBottom: '0px'}}>
+                <div className="row">
 
                     <div className="col s12" style={{marginBottom: '0px'}}>
                         <div className="row" style={{marginBottom: '0px'}}>
@@ -112,6 +112,16 @@ const FormSearch = () => {
                 </div>
             
             </form>    
+
+            <div className="row">
+                <div className="col s12">
+                    <div className={classNames({'submited-search': true, hiddenText: typeof submitedSearchParams.startDate === 'undefined'})}>
+                        Your submited Search: <br />
+                        
+                        <span style={{fontSize: '20px'}}>{submitedSearchParams.startDate+" - "+submitedSearchParams.endDate}</span>
+                    </div>
+                </div>
+            </div>
         </div>
         
         

@@ -11,7 +11,7 @@ const FormContextProvider = (props) => {
     let afterTomorrow  = moment(new Date()).add(2,'days');
 
     const [ searchParams, setSearchParams ] = useState(() => {
-        const localData = localStorage.getItem('last-search-params');
+        const localData = localStorage.getItem('submited-search-params');
 
         return localData ? JSON.parse(localData) : {
             startDate: tomorrow.format('ddd, MMM DD YYYY'), 

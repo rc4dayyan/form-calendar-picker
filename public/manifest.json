@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Calendar Picker",
+  "name": "Create React App Calendar picker component",
   "icons": [
     {
       "src": "favicon.ico",

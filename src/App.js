@@ -10,18 +10,14 @@ function App() {
       <header>
         <nav className="nav-wrapper transparent">
           <div className="container">
-            <a href="#!" className="brand-logo">Photo Ninja</a>
+            <a href="#!" className="brand-logo">Calenar Picker</a>
             <a href="#!" className="sidenav-trigger" data-target="mobile-menu">
               <i className="material-icons">menu</i>
             </a>
             <ul className="right hide-on-med-and-down">
-              <li><a href="#photos">Photo's</a></li>
-              <li><a href="#services">Services</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
             <ul className="sidenav grey lighten-2" id="mobile-menu">
-              <li><a href="#!">Photo's</a></li>
-              <li><a href="#!">Services</a></li>
               <li><a href="#!">Contact</a></li>
             </ul>
           </div>
@@ -85,27 +81,9 @@ function App() {
       </section>
 
       {/* footer */}
-      <footer className="page-footer grey darken-3">
-        <div className="container">
-          <div className="row">
-            <div className="col l6 s12">
-              <h5>About Me</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-            </div>
-            <div className="col l4 offset-l2 s12">
-              <h5 className="white-text">Connect</h5>
-              <ul>
-                <li><a className="grey-text text-lighten-3" href="#">Facebook</a></li>
-                <li><a className="grey-text text-lighten-3" href="#">Twitter</a></li>
-                <li><a className="grey-text text-lighten-3" href="#">Linked In</a></li>
-                <li><a className="grey-text text-lighten-3" href="#">Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <footer className="page-footer white">
         <div className="footer-copyright grey darken-4">
-          <div className="container center-align">&copy; 2018 Photo Ninja</div>
+          <div className="container center-align">&copy; 2020 Calendar Picker</div>
         </div>
       </footer>
       
