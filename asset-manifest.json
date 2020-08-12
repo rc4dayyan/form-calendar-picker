@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/form-calendar-picker/static/css/main.dbddc6e3.chunk.css",
+    "main.js": "/form-calendar-picker/static/js/main.99ceba1d.chunk.js",
+    "main.js.map": "/form-calendar-picker/static/js/main.99ceba1d.chunk.js.map",
+    "runtime-main.js": "/form-calendar-picker/static/js/runtime-main.2347a593.js",
+    "runtime-main.js.map": "/form-calendar-picker/static/js/runtime-main.2347a593.js.map",
+    "static/css/2.d41dc3a3.chunk.css": "/form-calendar-picker/static/css/2.d41dc3a3.chunk.css",
+    "static/js/2.f287c6da.chunk.js": "/form-calendar-picker/static/js/2.f287c6da.chunk.js",
+    "static/js/2.f287c6da.chunk.js.map": "/form-calendar-picker/static/js/2.f287c6da.chunk.js.map",
+    "index.html": "/form-calendar-picker/index.html",
+    "precache-manifest.292f11147327624374688e3c8f48f0b1.js": "/form-calendar-picker/precache-manifest.292f11147327624374688e3c8f48f0b1.js",
+    "service-worker.js": "/form-calendar-picker/service-worker.js",
+    "static/css/2.d41dc3a3.chunk.css.map": "/form-calendar-picker/static/css/2.d41dc3a3.chunk.css.map",
+    "static/css/main.dbddc6e3.chunk.css.map": "/form-calendar-picker/static/css/main.dbddc6e3.chunk.css.map",
+    "static/js/2.f287c6da.chunk.js.LICENSE.txt": "/form-calendar-picker/static/js/2.f287c6da.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2347a593.js",
+    "static/css/2.d41dc3a3.chunk.css",
+    "static/js/2.f287c6da.chunk.js",
+    "static/css/main.dbddc6e3.chunk.css",
+    "static/js/main.99ceba1d.chunk.js"
+  ]
+}
