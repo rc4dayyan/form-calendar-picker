@@ -91,8 +91,11 @@ div.Cal__Header__root {
   padding: 10px 0;
   cursor: pointer;
 }
+.mobile .white-box{
+  padding: 20px 0;
+}
 .date-title{
-  font-size: 120%;
+  font-size: 130%;
   line-height: 30px;
 }
 .App .btn-submit {
@@ -125,4 +128,8 @@ header{
   background-color: rgba(0,0,0,.36);
   padding: 16px 20px;
   color: #dcd6d6;
+}
+.btn-block {
+  display: block;
+  width: 100%;
 }

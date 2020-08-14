@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import FormContextProvider from './contexts/FormContext';
 import FormSearch from './components/FormSearch';
+import { BrowserView, MobileView } from "react-device-detect";
+import FormSearchMobile from './components/FormSearchMobile';
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
       <header>
         <nav className="nav-wrapper transparent">
           <div className="container">
-            <a href="#!" className="brand-logo">Calenar Picker</a>
+            <a href="#!" className="brand-logo">Calendar</a>
             <a href="#!" className="sidenav-trigger" data-target="mobile-menu">
               <i className="material-icons">menu</i>
             </a>
@@ -25,7 +27,12 @@ function App() {
 
         <div className="App">
           <FormContextProvider>
-            <FormSearch />
+            <BrowserView>
+              <FormSearch />
+            </BrowserView>      
+            <MobileView>
+              <FormSearchMobile />
+            </MobileView>
           </FormContextProvider>
         </div>
       </header>
@@ -45,17 +52,17 @@ function App() {
               <div className="input-field">
                 <i className="material-icons prefix">email</i>
                 <input type="email" id="email" />
-                <label for="email">Your Email</label>
+                <label htmlFor="email">Your Email</label>
               </div>
               <div className="input-field">
                 <i className="material-icons prefix">message</i>
                 <textarea id="message" className="materialize-textarea" cols="20" rows="20"></textarea>
-                <label for="message">Your Message</label>
+                <label htmlFor="message">Your Message</label>
               </div>
               <div className="input-field">
                 <i className="material-icons prefix">date_range</i>
                 <input type="text" id="date" className="datepicker" />
-                <label for="date">Choose a date you need me for...</label>
+                <label htmlFor="date">Choose a date you need me for...</label>
               </div>
               <div className="input-field">
                 <p>Services required:</p>
