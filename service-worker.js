@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/form-calendar-picker/precache-manifest.292f11147327624374688e3c8f48f0b1.js"
+  "/form-calendar-picker/precache-manifest.733af3c9c84efc994bdee39ad67ad446.js"
 );
 
 self.addEventListener('message', (event) => {
