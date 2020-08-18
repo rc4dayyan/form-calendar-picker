@@ -4,6 +4,9 @@ Simple component for calendar picker built with React.js <br />
 #### Description
 A simple calendar picker component built with react using stateless component and context
 
+### Live Demo
+https://rc4dayyan.github.io/form-calendar-picker
+
 #### Packages
 - <a href="https://github.com/clauderic/react-infinite-calendar" target="_blank">react-infinite-calendar</a> 
 - <a href="https://github.com/react-materialize/react-materialize">react-materialize</a>
@@ -17,5 +20,3 @@ A simple calendar picker component built with react using stateless component an
 ### Usage
 Run `npm start`<br/><br/><br/>
 
-### Live Demo
-https://rc4dayyan.github.io/form-calendar-picker-io
